@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="#" class="logo-a">
+                    <img src="./images/eu.png" alt="Wesley">
+                    <span class="nav-name">Developer Front-end</span>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#sobre" class="nav-a">
+                    <img src="./images/hacker.png" alt="Wesley">
+                    <span class="nav-name">About</span>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#skills" class="nav-a" id="clickSkill">
+                    <img src="./images/skills.png" alt="Wesley">
+                    <span class="nav-name">Skills</span>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#projects" class="nav-a">
+                    <img src="./images/projects.png" alt="Wesley">
+                    <span class="nav-name">Projects</span>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#contacts" class="nav-a">
+                    <img src="./images/contact.png" alt="Wesley">
+                    <span class="nav-name">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Social -->
+        <div class='container-social-media'>
+            <div class="social-media">
+                <a href="https://github.com/WesleyAlvess"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/wesley-alves-pereira-27496920a/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/wesleyalvp/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div class="switch">
+            <i class="fas fa-sun"></i>
+            <div class="space"></div>
+            <i class="fas fa-moon"></i>
+            <div id="ball"></div>
+        </div>
+        <article class="sobre" id="sobre">
+            <h1>Sobre</h1>
+            <p>
+                Meu nome e Wesley Pereira tenho 26 anos, atualmente sou estudante na área de desenvolvimento web
+                front-end, sou fascinado e apaixonado por tecnologia e como as coisas funcionam.
+                Desde sempre busco me aperfeiçoar a cada dia. No front-end tenho experiência em: HTML, CSS,
+                JavaScript, Sass, React, Styled-components, MaterialUI, Context API. Minha paixão pela programação
+                me faz buscar constantemente novos conhecimentos e tecnologias atualizadas. Como autodidata, tenho a
+                vantagem de aprender sozinho e manter-me sempre atualizado. Meu amor pelo desenvolvimento front-end
+                é o que me motiva a sempre procurar novos desafios e maneiras de crescer como desenvolvedor. Agora,
+                com o objetivo de me tornar um full-stack, estou animado para explorar novas áreas e ampliar meus
+                conhecimentos ainda mais. Nunca desistirei dos meus sonhos, sei que minha
+                jornada como desenvolvedor terá altos e baixos, mas estou pronto para enfrentá-los com determinação
+                e força de vontade. Estou ansioso para ver onde minha jornada de aprendizado e crescimento me
+                levará!
+            </p>
+        </article>
+
+        <div class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="container-skills">
+                <li>
+                    <h3>Html</h3>
+                    <span class="bar">
+                        <span class="html"></span>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <span class="bar">
+                        <span class="css"></span>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <span class="bar">
+                        <span class="javascript"></span>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <h3>React</h3>
+                    <span class="bar">
+                        <span class="react"></span>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <h3>Linux</h3>
+                    <span class="bar">
+                        <span class="linux"></span>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="30%" style="max-width: 30%;"></div>
+                        </div>
+                    </span>
+                </li>
+            </div>
+        </div>
+
+        <div class="projects-section" id="projects">
+            <h2>Projects</h2>
+            <ul class="container-ul">
+                <li>
+                    <div id="project-1">
+                        <h3>Primeiro portifólio</h3>
+                        <a href="https://wesleyalvess.github.io/portifolio/">
+                            <div class="card-projects" id="cardImg1">
+                                <img src="./images/projetoWesley.png" alt="Primeiro portifólio" width="250px"
+                                    height="150px">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="project-2">
+                        <h3>Segundo Portifólio</h3>
+                        <a href="https://wapereira.netlify.app/">
+                            <div class="card-projects" id="cardImg2">
+                                <img src="./images/projetovite.png" alt="Segundo Portifólio" width="250px"
+                                    height="150px">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="project-3">
+                        <h3>Lista de produtos</h3>
+                        <a href="https://wesleyalvess.github.io/cadastroProdutos/">
+                            <div class="card-projects" id="cardImg3">
+                                <img src="./images/listaProdutos.png" alt="Lista de produtos" width="250px"
+                                    height="150px">
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="project-3">
+                        <h3>Formulário</h3>
+                        <a href="https://wesleyalvess.github.io/formulario/">
+                            <div class="card-projects" id="cardImg3">
+                                <img src="./images/formulario.png" alt="Formulário" width="250px" height="150px">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-contact" id="contacts">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="card">
+                    <a href="https://mail.google.com/mail/u/1/#inbox">
+                        <img src="./images/gmail.png" alt="Gmail" width="40px" height="40px">
+                    </a>
+                    <p>walvespereira96@gmail.com</p>
+                </div>
+                <div class="card">
+                    <a href="https://web.whatsapp.com/send?phone=551998424-6161" target="_blank">
+                        <img src="./images/whatsapp.png" alt="whatsapp" width="40px" height="40px">
+                    </a>
+                    <p>(19) 9 8424-6161</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.google.com.br/maps/place/Jardim+Flamboyant,+Campinas+-+SP/@-22.8822088,-47.0424687,15z/data=!4m6!3m5!1s0x94c8cf631be31dfb:0xe29c597d2ec3148a!8m2!3d-22.8828262!4d-47.0321556!16s%2Fg%2F1z0spjkpp"target="_blank">
+                        <img src="./images/mapa.png" alt="Localização" width="40px" height="40px">
+                    </a>
+                    <p>Campinas, SP</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
