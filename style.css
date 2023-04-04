@@ -26,12 +26,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     height: 100%;
     background-color: var(--sidebar);
@@ -39,6 +41,7 @@ nav {
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .logo {
@@ -237,7 +240,7 @@ main .switch {
 /* Main content */
 
 main {
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-color);
     margin-left: 80px;
     padding: 30px;
@@ -247,12 +250,10 @@ main {
 /* Sobre */
 
 .sobre {
-    height: 100vh;
+    height: 100%;
     line-height: 1.5;
     letter-spacing: .5px;
-    line-height: 1.5;
-    text-indent: 20px;
-    text-align: justify;
+    /* text-align: justify; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,7 +264,7 @@ main {
     margin-bottom: 30px;
 }
 
-.sobre p{
+.sobre p {
     width: 80%;
 }
 
@@ -272,14 +273,14 @@ main {
 .container-skills {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding-left: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
     margin-top: 50px;
 }
 
 .skills {
-    height: 100vh;
+    height: 100%;
     border-top: 100px solid transparent;
 }
 
@@ -445,19 +446,18 @@ main {
 
 .projects-section div {
     width: 100%;
-    height: 200px;
-    margin-bottom: 100px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects-section h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
-.projects-section p {
-    font-size: 14px;
-    margin: 0;
-}
 
 /* Contacts */
 
@@ -467,7 +467,7 @@ main {
     margin: 0 auto;
     padding: 50px;
     text-align: center;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -502,5 +502,14 @@ main {
 
     to {
         transform: scale(1.2);
+    }
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+    .card p{
+        font-size: 11px;
+        font-weight: bold;
     }
 }
